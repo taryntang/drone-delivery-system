@@ -10,13 +10,13 @@ The Drone Delivery System models the workflow of a commercial drone delivery pla
 
 Users can manage:
 
-- 🏪 Stores and inventory
-- 👤 Customers
-- 🚁 Delivery drones
-- 🧑‍✈️ Drone pilots
-- 📦 Customer orders
-- 🛒 Order items
-- ✈️ Drone delivery operations
+- Stores and inventory
+- Customers
+- Delivery drones
+- Drone pilots
+- Customer orders
+- Order items
+- Drone delivery operations
 
 The application coordinates these components while maintaining the relationships between stores, customers, pilots, drones, inventory, and active orders.
 
