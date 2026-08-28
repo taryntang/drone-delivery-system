@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Make Pilot</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(
+            function () {
+                //SUBMIT FORM
+                $("#pilotForm").submit(function(event) {
+                    event.preventDefault();
+                    ajaxPost();
+                    setTimeout(ajaxGet, 600);
+                });
+
+                function ajaxPost() {
+                    var formData = {
+                        pilotID: $("#pilotID").val(),
+                        firstName: $("#firstName").val(),
+                        lastName: $("#lastName").val(),
+                        phoneNumber: $("#phoneNumber").val(),
+                        taxID: $("#taxID").val(),
+                        licenseID: $("#licenseID").val(),
+                        numDelivery: $("#numDelivery").val()
+                    };
+
+                    $.ajax({
+                        type : "POST",
+                        contentType : "application/json",
+                        url : "add_pilot",
+                        data : JSON.stringify(formData),
+                        dataType : "json"
+                    });
+                }
+
+                function ajaxGet() {
+                    $.ajax({
+                        type : "GET",
+                        url : "/error_msg"
+                    })
+                        .always (function(result) {
+                            $('#error').html(result);
+                            console.log("MESSAGE SHOWS");
+                        });
+                }
+            }
+        )
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <a ckass="navbar-brand" href ="/admin_platform" >Main Menu</a>
+    <a href="/logout"><input class="btn btn-outline-success mr-auto" type="button" name="logout" id="logout" value="Logout"></a>
+</nav>
+<div sec:authorize="isAuthenticated()">
+    Authenticated as <span sec:authentication="name"></span>
+</div>
+<div id="main_container" align="center">
+    <div class="stores-wrapper">
+        <div class="subtitle">
+            Make Pilot
+        </div>
+        <br>
+        <div id="make_pilot">
+            <form id="pilotForm" action="#" method="post">
+                <div class="form-group">
+                    <label for="pilotID">Account:</label>
+                    <input type="text" class="form-control" id="pilotID" name="pilotID" required/>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" required/>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" required/>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="xxx-xxx-xxxx" required/>
+                </div>
+                <div class="form-group">
+                    <label for="taxID">Tax ID:</label>
+                    <input type="text" class="form-control" id="taxID" name="taxID" required/>
+                </div>
+                <div class="form-group">
+                    <label for="licenseID">License ID:</label>
+                    <input type="text" class="form-control" id="licenseID" name="licenseID" required/>
+                </div>
+                <div class="form-group">
+                    <label for="numDelivery">Experience:</label>
+                    <input type="number" class="form-control" id="numDelivery" name="numDelivery" placeholder="integer" required/>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br />
+            <div class="buttons button-1 ">
+                <a href="/display_pilots" class="btn btn-primary mr-auto"> Display Pilots </a>
+            </div>
+            <div id="error" align="center"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

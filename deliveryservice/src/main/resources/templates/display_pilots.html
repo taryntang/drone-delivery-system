@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:fragment="html_head">
+    <meta charset="UTF-8">
+    <title>Display Pilots</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(
+            function () {
+                ajaxGetPilot();
+                setTimeout(ajaxGet, 600);
+
+                function ajaxGetPilot() {
+                    $.ajax({
+                        type: "GET",
+                        url: "list_pilots",
+                        success: function (result) {
+                            $('#emp').empty();
+                            if (result.status == "success") {
+                                var list = "";
+                                $.each(result.data, function (i, pilot) {
+                                    list += '<tr>';
+                                    list += '<td>' + pilot.pilotID + '</td>'
+                                    list += '<td>' + pilot.firstName + '_' + pilot.lastName + '</td>'
+                                    list += '<td>' + pilot.phoneNumber + '</td>'
+                                    list += '<td>' + pilot.licenseID + '</td>'
+                                    list += '<td>' + pilot.taxID + '</td>'
+                                    list += '<td>' + pilot.numDelivery + '</td>'
+                                    list += '</tr>';
+                                });
+                                $('#pilot-list').append(list);
+                                console.log("Success: ", result);
+                            }
+                        },
+                        error: function (e) {
+                            $('#emp').empty();
+                            console.log("ERROR: ", e);
+                        }
+                    });
+                }
+
+                function ajaxGet() {
+                    $.ajax({
+                        type: "GET",
+                        url: "/error_msg",
+                        success: function (result) {
+                            $('#error').html(result);
+                            console.log("MESSAGE SHOWS");
+                        }
+                    });
+                }
+            }
+        )
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <a ckass="navbar-brand" href ="/admin_platform" >Main Menu</a>
+    <a href="/logout"><input class="btn btn-outline-success mr-auto" type="button" name="logout" id="logout" value="Logout"></a>
+</nav>
+<div sec:authorize="isAuthenticated()">
+    Authenticated as <span sec:authentication="name"></span>
+</div>
+<div id="main_container" align="center">
+    <div class="stores-wrapper">
+        <div class="subtitle">
+            Display Pilots
+        </div>
+        <br>
+        <div id="pilots">
+            <table id="pilot-list" class="pilot-list" style="max-width: 1440px" border="1">
+                <thead>
+                <tr>
+                    <th style="max-width:200px">Pilot ID</th>
+                    <th style="max-width:200px">Name</th>
+                    <th style="max-width:200px">Phone Number</th>
+                    <th style="max-width:200px">License ID</th>
+                    <th style="max-width:200px">Tax ID</th>
+                    <th style="max-width:200px">Experience</th>
+                </tr>
+                </thead>
+                <tbody id="emp">
+
+                </tbody>
+            </table>
+        </div>
+        <div id="error" align="center"></div>
+    </div>
+</div>
+</body>
+</html>

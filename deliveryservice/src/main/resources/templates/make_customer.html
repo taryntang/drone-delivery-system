@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Customer Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(
+            function () {
+                //SUBMIT FORM
+                $("#customerForm").submit(function(event) {
+                    event.preventDefault();
+                    ajaxPost();
+                    setTimeout(ajaxGet, 600);
+                });
+
+                function ajaxPost() {
+                    var formData = {
+                        customerID: $("#customerID").val(),
+                        firstName: $("#firstName").val(),
+                        lastName: $("#lastName").val(),
+                        phoneNumber: $("#phoneNumber").val(),
+                        customerRating: $("#customerRating").val(),
+                        customerCredit: $("#customerCredit").val(),
+                        customerPassword: $("#customerPassword").val()
+                    };
+
+                    $.ajax({
+                        type : "POST",
+                        contentType : "application/json",
+                        url : "add_customer",
+                        data : JSON.stringify(formData),
+                        dataType : "json"
+                    });
+                }
+
+                function ajaxGet() {
+                    $.ajax({
+                        type : "GET",
+                        url : "/error_msg_order_system",
+                        success : function(result) {
+                            $('#errorPlace').html(result);
+                            console.log("MESSAGE SHOWS");
+                        }
+                    });
+                }
+
+            }
+        )
+    </script>
+</head>
+<body>
+
+<div id="main_container" align="center">
+    <div class="customers-wrapper">
+        <div class="subtitle">
+            Customer Register
+        </div>
+        <br>
+        <div id="make_customer">
+            <form id="customerForm" action="#" method="post">
+
+                <div class="form-group">
+                    <label for="customerID">Customer ID:</label>
+                    <input type="text" class="form-control" id="customerID" name="customerID" required/>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">Customer First Name:</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" required/>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Customer Last Name:</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" required/>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+                </div>
+                <div class="form-group">
+                    <label for="customerRating">Customer Rating:</label>
+                    <input type="number" class="form-control" id="customerRating" name="customerRating" placeholder="integer" min="1" max="5" required/>
+                </div>
+                <div class="form-group">
+                    <label for="customerCredit">Customer Credit:</label>
+                    <input type="number" class="form-control" id="customerCredit" name="customerCredit" placeholder="integer" required/>
+                </div>
+                <div class="form-group">
+                    <label for="customerPassword">Password:</label>
+                    <input type="text" class="form-control" id="customerPassword" name="customerPassword" required/>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br>
+            <div class="buttons button-7 ">
+                <a href="/login" class="btn btn-primary mr-auto"> Back to Login </a>
+            </div>
+
+            <br>
+            <div id="errorPlace" align="center"></div>
+            <br>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

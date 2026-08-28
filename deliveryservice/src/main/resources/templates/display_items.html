@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:fragment="html_head">
+    <meta charset="UTF-8">
+    <title>Display Items</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(
+            function () {
+                //SUBMIT FORM
+                $("#displayItemsForm").submit(function (event) {
+                    event.preventDefault();
+                    ajaxGetItem();
+                    setTimeout(ajaxGet, 600);
+                });
+
+                function ajaxGetItem() {
+                    var formData = {
+                        storeName: $("#storeName").val()
+                    };
+
+                    $.ajax({
+                        type: "GET",
+                        contentType : "application/json",
+                        url: "list_items",
+                        data : formData,
+                        success: function (result) {
+                            $('#emp').empty();
+                            if (result.status == "success") {
+                                var list = "";
+                                $.each(result.data, function (i, item) {
+                                    list += '<tr>';
+                                    list += '<td>' + item.itemName + '</td>'
+                                    list += '<td>' + item.itemWeight + '</td>'
+                                    list += '</tr>';
+                                });
+                                $('#item-list').append(list);
+                                console.log("Success: ", result);
+                            }
+                        },
+                        error: function (e) {
+                            $('#emp').empty();
+                            $("#getResult").html("<strong>Error</strong>");
+                            console.log("ERROR: ", e);
+                        }
+                    });
+                }
+
+                function ajaxGet() {
+                    $.ajax({
+                        type : "GET",
+                        url : "/error_msg",
+                        success : function(result) {
+                            $('#error').html(result);
+                            console.log("MESSAGE SHOWS");
+                        }
+                    });
+                }
+            }
+        )
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <a ckass="navbar-brand" href ="/admin_platform" >Main Menu</a>
+    <a href="/logout"><input class="btn btn-outline-success mr-auto" type="button" name="logout" id="logout" value="Logout"></a>
+</nav>
+<div sec:authorize="isAuthenticated()">
+    Authenticated as <span sec:authentication="name"></span>
+</div>
+<div id="main_container" align="center">
+    <div class="stores-wrapper">
+        <div class="subtitle">
+            Display Items
+        </div>
+        <br>
+        <div id="items">
+            <form id="displayItemsForm" action="#" method="get">
+                <div class="form-group">
+                    <label for="storeName">Store Name:</label>
+                    <input type="text" class="form-control" id="storeName" name="storeName" required/>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br>
+            <table id="item-list" class="item-list" style="max-width: 3000px" border="1">
+                <thead>
+                <tr>
+                    <th style="max-width:600px">Item Name</th>
+                    <th style="max-width:400px">Item Weight</th>
+                </tr>
+                </thead>
+                <tbody id="emp">
+
+                </tbody>
+            </table>
+        </div>
+        <div id="error" align="center"></div>
+    </div>
+</div>
+</body>
+</html>

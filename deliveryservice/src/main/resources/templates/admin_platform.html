@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Delivery Service</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="main_container">
+    <div class="stores-wrapper">
+        <nav class="navbar navbar-light bg-light">
+            <a ckass="navbar-brand" href ="/admin_platform" >Main Menu</a>
+            <a href="/logout"><input class="btn btn-outline-success mr-auto" type="button" name="logout" id="logout" value="Logout"></a>
+        </nav>
+        <br>
+        <div th:if="${#authentication.name == 'admin'}">
+        <div class="float-parent">
+            <div class="float-child buttons">
+                <div class="buttons button-1 ">
+                    <a href="/make_store" class="btn btn-primary mr-auto"> Make Store </a>
+                </div>
+                <br>
+                <div class="buttons button-2 ">
+                    <a href="/display_stores" class="btn btn-primary mr-auto"> Display Stores </a>
+                </div>
+                <br>
+                <div class="buttons button-3 ">
+                    <a href="/make_drone" class="btn btn-primary mr-auto"> Make Drone </a>
+                </div>
+                <br>
+                <div class="buttons button-4 ">
+                    <a href="/display_drones" class="btn btn-primary mr-auto"> Display Drones </a>
+                </div>
+                <br>
+                <div class="buttons button-5 ">
+                    <a href="/sell_item" class="btn btn-primary mr-auto"> Add Store Item </a>
+                </div>
+                <br>
+                <div class="buttons button-6 ">
+                    <a href="/display_items" class="btn btn-primary mr-auto"> Display Store Items </a>
+                </div>
+                <br>
+                <div class="buttons button-7 ">
+                    <a href="/make_pilot" class="btn btn-primary mr-auto"> Make Pilot </a>
+                </div>
+                <br>
+                <div class="buttons button-8 ">
+                    <a href="/display_pilots" class="btn btn-primary mr-auto"> Display Pilots </a>
+                </div>
+                <br>
+                <div class="buttons button-9 ">
+                    <a href="/fly_drone" class="btn btn-primary mr-auto"> Fly Drone </a>
+                </div>
+                <br>
+                <div class="buttons button-10 ">
+                    <a href="/order/display_orders" class="btn btn-primary mr-auto"> Display Orders </a>
+                </div>
+                <br>
+                <div class="buttons button-11 ">
+                    <a href="/display_customers" class="btn btn-primary mr-auto"> Display Customers </a>
+                </div>
+                <br>
+                <div class="buttons button-12 ">
+                    <a href="/order/downloadArchivedOrders" class="btn btn-primary mr-auto"> Archive Orders > 180 days </a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div th:if="${#authentication.name != 'admin'}">
+            <div class="float-parent">
+                <div class="float-child buttons">
+                    <div class="buttons button-1 ">
+                        <a href="/order/start_order" class="btn btn-primary mr-auto"> Start Order </a>
+                    </div>
+                    <br>
+                    <div class="buttons button-2 ">
+                        <a href="/order/request_item" class="btn btn-primary mr-auto"> Request Item </a>
+                    </div>
+                    <br>
+                    <div class="buttons button-3 ">
+                        <a href="/order/purchase_order" class="btn btn-primary mr-auto"> Purchase Order </a>
+                    </div>
+                    <br>
+                    <div class="buttons button-4 ">
+                        <a href="/order/cancel_order" class="btn btn-primary mr-auto"> Cancel Order </a>
+                    </div>
+                    <br>
+                    <div class="buttons button-4 ">
+                        <a href="/order/display_orders_customer" class="btn btn-primary mr-auto"> Display My Orders </a>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

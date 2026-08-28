@@ -1,0 +1,1080 @@
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "kroger",
+  "revenue": 53000
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "publix",
+  "revenue": 36300
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Costco",
+  "revenue": 60000
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Foodigo",
+  "revenue": 40000
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Walmart",
+  "revenue": 73400
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Smart Grocer",
+  "revenue": 73540
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Kwikmart",
+  "revenue": 56700
+}
+
+
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Urban Grocer",
+  "revenue": 83400
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Foodstuffly",
+  "revenue": 77060
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Star Market",
+  "revenue": 77060
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "trader joe's",
+  "revenue": 50660
+}
+
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Aldi",
+  "revenue": 29250
+}
+
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Vons",
+  "revenue": 79660
+}
+
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Whole Foods Market",
+  "revenue": 48336
+}
+
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Delta Organics",
+  "revenue": 94646
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Apples To Oranges",
+  "revenue": 26320
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Lucky Grocers",
+  "revenue": 53320
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Fresh Mart",
+  "revenue": 33320
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Lotte Plaza Market",
+  "revenue": 33560
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Friendly Fare",
+  "revenue": 66750
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Farm to Fork",
+  "revenue": 62757
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Nature Coop",
+  "revenue": 53736
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Food to Fly",
+  "revenue": 52526
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "A-Z Organics",
+  "revenue": 99455
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Exotic Eats",
+  "revenue": 36955
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Wegmans",
+  "revenue": 78430
+}
+
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+   "storeName": "Save-On-Foods",
+   "revenue": 83535
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "The Grocery Outlet",
+  "revenue": 23318
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Bloor Street Market",
+  "revenue": 24519
+}
+
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Bromley Food Store",
+  "revenue": 63175
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Pepper’s Grocery",
+  "revenue": 47123
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Sunrise Mart",
+  "revenue": 23535
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Clover Grocery",
+  "revenue": 74111
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Sun Vin Grocery Store",
+  "revenue": 72481
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Foodigo",
+  "revenue": 33500
+}
+
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Brooklyn Fare",
+  "revenue": 53736
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "FreshChoice",
+  "revenue": 93510
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Farro Fresh Lunn Ave",
+  "revenue": 37869
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Bulk Food Savings",
+  "revenue": 91477
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Countdown",
+  "revenue": 53613
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Festival Foods",
+  "revenue": 67044
+}
+
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Delta Organics",
+  "revenue": 66760
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "The Blue Buck",
+  "revenue": 20536
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "The Spice Rack",
+  "revenue": 74118
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Family Fare Supermarket",
+  "revenue": 61655
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Save-A-Lot",
+  "revenue": 75370
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Food Service Store",
+  "revenue": 89669
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Holton Grocery",
+  "revenue": 50149
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Vinckier Foods",
+  "revenue": 62185
+}
+
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Whitelaw Market",
+  "revenue": 34331
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Vital Vittles",
+  "revenue": 27385
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Sanford Food Center",
+  "revenue": 27108
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Mesick Market",
+  "revenue": 63193
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Safeway",
+  "revenue": 40266
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Union Kitchen Grocery",
+  "revenue": 27336
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Giant Food",
+  "revenue": 86597
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Good Food Markets",
+  "revenue": 52151
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Brookland Market",
+  "revenue": 75785
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Super Saver Grocery",
+  "revenue": 32742
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Flavor Us Market",
+  "revenue": 36552
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Fleet Market",
+  "revenue": 43143
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Organic Orchard",
+  "revenue": 87055
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Kitchen Delight Stores",
+  "revenue": 74465
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Meals on Wheels",
+  "revenue": 65449
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Rancher’s Grocery",
+  "revenue": 96168
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Market Convenience",
+  "revenue": 98387
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Safeway store",
+  "revenue": 36819
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Athena Farms",
+  "revenue": 51173
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Supersienna grocery",
+  "revenue": 79761
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "LuckyHands store",
+  "revenue": 79507
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Steps To Saving",
+  "revenue": 86333
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Family Food Co.",
+  "revenue": 34010
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Food Superstore",
+  "revenue": 86115
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Food Grocery Store",
+  "revenue": 91665
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Mega Market",
+  "revenue": 21843
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Rise & Shine",
+  "revenue": 54915
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Mini Super Market",
+  "revenue": 61010
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Freedom Market",
+  "revenue": 80771
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Dupont Market",
+  "revenue": 78236
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Mini Metro",
+  "revenue": 99788
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "kroger",
+  "revenue": 47000
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Each Peach Market",
+  "revenue": 40254
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Streets Market",
+  "revenue": 85499
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Odd Provisions",
+  "revenue": 89209
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Grocery and Liquor",
+  "revenue": 71893
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Save Mart Supermarkets",
+  "revenue": 25012
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Kings Food Grocery Store",
+  "revenue": 35808
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Grocery Outlet",
+  "revenue": 97497
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Food 4 Less",
+  "revenue": 56986
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Greenaway Grocer",
+  "revenue": 22670
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Any time Food",
+  "revenue": 26449
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "HarvesTime Foods",
+  "revenue": 38948
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Fresh Market Place",
+  "revenue": 57885
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Cermak Produce",
+  "revenue": 51366
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Farmeez",
+  "revenue": 88654
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Simply Natural Grocer",
+  "revenue": 73992
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "TheFarmory",
+  "revenue": 25339
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Farmarket Stand",
+  "revenue": 25558
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Major Market",
+  "revenue": 29229
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Safeway store",
+  "revenue": 45361
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Happy Mart",
+  "revenue": 52741
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Golden Grocery",
+  "revenue": 79037
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Save Mart",
+  "revenue": 83462
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Purefoods",
+  "revenue": 20727
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Grower’s Market",
+  "revenue": 31459
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "GoldenFresh Market",
+  "revenue": 63683
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Real Food Market",
+  "revenue": 92862
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "BestBargain",
+  "revenue": 99690
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Deluxe Food Market",
+  "revenue": 57598
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Union Grocery",
+  "revenue": 75208
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Foodland",
+  "revenue": 89525
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Greenaway Grocer",
+  "revenue": 22670
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Farm to Fork",
+  "revenue": 53736
+}
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Stop & Shop",
+  "revenue": 96909
+}
+
+
+###
+POST http://localhost:9090/add_store
+Content-Type: application/json
+
+{
+  "storeName": "Lucky’s Market",
+  "revenue": 96909
+}

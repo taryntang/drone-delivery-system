@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:fragment="html_head">
+    <meta charset="UTF-8">
+    <title>Display Customers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(
+            function () {
+                ajaxGetCustomer();
+                setTimeout(ajaxGet, 600);
+
+                function ajaxGetCustomer() {
+                    $.ajax({
+                        type : "GET",
+                        url : "list_customers",
+                        success : function(result) {
+                            if (result.status == "success") {
+                                var list = "";
+                                $.each(result.data, function (i, customer) {
+                                    list += '<tr>';
+                                    list += '<td>'+customer.customerID+'</td>'
+                                    list += '<td>'+customer.firstName+'</td>'
+                                    list += '<td>'+customer.lastName+'</td>'
+                                    list += '<td>'+customer.phoneNumber+'</td>'
+                                    list += '<td>'+customer.customerRating+'</td>'
+                                    list += '<td>'+customer.customerCredit+'</td>'
+                                    list += '</tr>';
+                                });
+                                $('#customer-list').append(list);
+                                console.log("Success: ", result);
+                            }
+                        },
+                        error: function (e) {
+                            $('#emp').empty();
+                            console.log("ERROR: ", e);
+                        }
+                    });
+                }
+
+                function ajaxGet() {
+                    $.ajax({
+                        type: "GET",
+                        url: "/error_msg_order_system",
+                        success: function (result) {
+                            $('#error').html(result);
+                            console.log("MESSAGE SHOWS");
+                        }
+                    });
+                }
+
+            }
+        )
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <a ckass="navbar-brand" href ="/admin_platform" >Main Menu</a>
+    <a href="/logout"><input class="btn btn-outline-success mr-auto" type="button" name="logout" id="logout" value="Logout"></a>
+</nav>
+<div sec:authorize="isAuthenticated()">
+    Authenticated as <span sec:authentication="name"></span>
+</div><div id="main_container" align="center">
+    <div class="customers-wrapper">
+        <div class="subtitle">
+            Display Customers
+        </div>
+        <br>
+        <div id="customers">
+            <table id="customer-list" class="customer-list" style="max-width: 1440px" border="1">
+                <tr>
+                    <th style="max-width:300px">Customer ID</th>
+                    <th style="max-width:200px">First Name</th>
+                    <th style="max-width:300px">Last Name</th>
+                    <th style="max-width:200px">Phone Number</th>
+                    <th style="max-width:300px">Customer Rating</th>
+                    <th style="max-width:200px">Customer Credit</th>
+                </tr>
+            </table>
+        </div>
+        <div id="error" align="center"></div>
+    </div>
+</div>
+</body>
+</html>

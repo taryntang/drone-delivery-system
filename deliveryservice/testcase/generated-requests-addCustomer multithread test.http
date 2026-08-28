@@ -1,0 +1,1472 @@
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "aapple2",
+  "firstName": "Alana",
+  "lastName": "Apple",
+  "phoneNumber": "222-222-2222",
+  "customerRating": 4,
+  "customerCredit": 100,
+  "customerPassword": "000"
+}
+
+
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID":  "ccherry4",
+  "firstName":  "Carlos",
+  "lastName": "Cherry",
+  "phoneNumber": "444-444-4444",
+  "customerRating": 5,
+  "customerCredit": 300,
+  "customerPassword": "000"
+}
+
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit1",
+  "firstName": "Lee",
+  "lastName": "Grape",
+  "phoneNumber": "458-235-3574",
+  "customerRating": 4,
+  "customerCredit": 120,
+  "customerPassword": "000"
+}
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID":  "fruit2",
+  "firstName":  "Alice",
+  "lastName": "Strawberry",
+  "phoneNumber": "488-235-3333",
+  "customerRating": 3,
+  "customerCredit": 90,
+  "customerPassword": "000"
+}
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID":  "fruit4",
+  "firstName":  "Mike",
+  "lastName": "Orange",
+  "phoneNumber": "444-444-4444",
+  "customerRating": 5,
+  "customerCredit": 300,
+  "customerPassword": "000"
+}
+
+
+
+
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID":  "fruit222",
+  "firstName":  "Alice",
+  "lastName": "Strawberry",
+  "phoneNumber": "488-235-3333",
+  "customerRating": 3,
+  "customerCredit": 90,
+  "customerPassword": "000"
+}
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID":  "fruit99",
+  "firstName":  "Mike",
+  "lastName": "Orange",
+  "phoneNumber": "444-444-4444",
+  "customerRating": 5,
+  "customerCredit": 300,
+  "customerPassword": "000"
+}
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID":  "fruit7",
+  "firstName":  "Mat",
+  "lastName": "Watermelon",
+  "phoneNumber": "428-458-4554",
+  "customerRating": 2,
+  "customerCredit": 43,
+  "customerPassword": "000"
+}
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID":  "fruit5",
+  "firstName":  "Tom",
+  "lastName": "Apricot",
+  "phoneNumber": "464-666-3333",
+  "customerRating": 1,
+  "customerCredit": 15,
+  "customerPassword": "000"
+}
+
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID":  "fruit4",
+  "firstName":  "Kim",
+  "lastName": "Grapefruit",
+  "phoneNumber": "356-346-4554",
+  "customerRating": 2,
+  "customerCredit": 30,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID":  "fruit10",
+  "firstName":  "Satish",
+  "lastName": "Lime",
+  "phoneNumber": "124-467-8963",
+  "customerRating": 4,
+  "customerCredit": 56,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit164",
+  "firstName": "Ignacy ",
+  "lastName": "Hodgson",
+  "phoneNumber": "364-607-3456",
+  "customerRating": 2,
+  "customerCredit": 571,
+  "customerPassword": "000"
+}
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit117",
+  "firstName": "Ralphy ",
+  "lastName": "Navarro",
+  "phoneNumber": "344-768-7405",
+  "customerRating": 2,
+  "customerCredit": 10,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit102",
+  "firstName": "Elina ",
+  "lastName": "Rivers",
+  "phoneNumber": "347-457-7405",
+  "customerRating": 2,
+  "customerCredit": 386,
+  "customerPassword": "000"
+}
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit137",
+  "firstName": "Brody ",
+  "lastName": "Betts",
+  "phoneNumber": "679-457-7405",
+  "customerRating": 1,
+  "customerCredit": 344,
+  "customerPassword": "000"
+}
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit290",
+  "firstName": "Chanel ",
+  "lastName": "Irving",
+  "phoneNumber": "466-679-7405",
+  "customerRating": 3,
+  "customerCredit": 158,
+  "customerPassword": "000"
+}
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit250",
+  "firstName": "Qasim ",
+  "lastName": "Parker",
+  "phoneNumber": "872-768-4444",
+  "customerRating": 2,
+  "customerCredit": 581,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit57",
+  "firstName": "Kingston ",
+  "lastName": "Mckenzie",
+  "phoneNumber": "466-333-7405",
+  "customerRating": 1,
+  "customerCredit": 39,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit207",
+  "firstName": "Davina ",
+  "lastName": "Burnett",
+  "phoneNumber": "872-343-7405",
+  "customerRating": 1,
+  "customerCredit": 222,
+  "customerPassword": "000"
+}
+
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit1",
+  "firstName": "Lee",
+  "lastName": "Lemon",
+  "phoneNumber": "458-235-3574",
+  "customerRating": 4,
+  "customerCredit": 420,
+  "customerPassword": "000"
+}
+
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit243",
+  "firstName": "Jesse",
+  "lastName": "Mercado",
+  "phoneNumber": "872-607-6665",
+  "customerRating": 2,
+  "customerCredit": 171,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit229",
+  "firstName": "Oscar",
+  "lastName": "Phillips",
+  "phoneNumber": "222-607-7405",
+  "customerRating": 4,
+  "customerCredit": 226,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit137",
+  "firstName": "Lewis",
+  "lastName": "Barry",
+  "phoneNumber": "676-344-7405",
+  "customerRating": 2,
+  "customerCredit": 106,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit70",
+  "firstName": "Peter",
+  "lastName": "Pollard",
+  "phoneNumber": "357-345-7405",
+  "customerRating": 3,
+  "customerCredit": 203,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit171",
+  "firstName": "Frederick",
+  "lastName": "Carty",
+  "phoneNumber": "872-445-4577",
+  "customerRating": 1,
+  "customerCredit": 114,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit210",
+  "firstName": "Benjamin",
+  "lastName": "Strickland",
+  "phoneNumber": "235-457-7405",
+  "customerRating": 5,
+  "customerCredit": 182,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit163",
+  "firstName": "Willie",
+  "lastName": "Farmer",
+  "phoneNumber": "568-566-7405",
+  "customerRating": 1,
+  "customerCredit": 318,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit39",
+  "firstName": "Alfred",
+  "lastName": "Hayward",
+  "phoneNumber": "872-745-8336",
+  "customerRating": 3,
+  "customerCredit": 89,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit55",
+  "firstName": "Sam",
+  "lastName": "Ventura",
+  "phoneNumber": "445-632-7405",
+  "customerRating": 1,
+  "customerCredit": 272,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit283",
+  "firstName": "Roy",
+  "lastName": "Browne",
+  "phoneNumber": "346-607-3467",
+  "customerRating": 1,
+  "customerCredit": 67,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit17",
+  "firstName": "Herbert",
+  "lastName": "Higgins",
+  "phoneNumber": "475-346-7405",
+  "customerRating": 1,
+  "customerCredit": 233,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit72",
+  "firstName": "Jacob",
+  "lastName": "Pollard",
+  "phoneNumber": "455-607-4587",
+  "customerRating": 3,
+  "customerCredit": 208,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit176",
+  "firstName": "Tom",
+  "lastName": "Bell",
+  "phoneNumber": "366-697-3366",
+  "customerRating": 4,
+  "customerCredit": 371,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit59",
+  "firstName": "Elmer",
+  "lastName": "Partridge",
+  "phoneNumber": "672-375-7256",
+  "customerRating": 5,
+  "customerCredit": 332,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit14",
+  "firstName": "Carl",
+  "lastName": "Barron",
+  "phoneNumber": "437-767-74675",
+  "customerRating": 4,
+  "customerCredit": 12,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit25",
+  "firstName": "Lee",
+  "lastName": "Dolan",
+  "phoneNumber": "388-607-3462",
+  "customerRating": 4,
+  "customerCredit": 38,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit95",
+  "firstName": "Howard",
+  "lastName": "Cordova",
+  "phoneNumber": "465-607-7405",
+  "customerRating": 4,
+  "customerCredit": 341,
+  "customerPassword": "000"
+}
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit87",
+  "firstName": "Martin",
+  "lastName": "Nicholson",
+  "phoneNumber": "687-757-7405",
+  "customerRating": 4,
+  "customerCredit": 82,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit283",
+  "firstName": "Michael",
+  "lastName": "Wicks",
+  "phoneNumber": "777-866-7405",
+  "customerRating": 1,
+  "customerCredit": 294,
+  "customerPassword": "000"
+}
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit191",
+  "firstName": "Bert",
+  "lastName": "Archer",
+  "phoneNumber": "636-607-7897",
+  "customerRating": 5,
+  "customerCredit": 377,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit31",
+  "firstName": "Herman",
+  "lastName": "Shepard",
+  "phoneNumber": "445-566-7405",
+  "customerRating": 1,
+  "customerCredit": 559,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit279",
+  "firstName": "Jim",
+  "lastName": "Dalton",
+  "phoneNumber": "556-656-7405",
+  "customerRating": 1,
+  "customerCredit": 370,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit16",
+  "firstName": "Francis",
+  "lastName": "Little",
+  "phoneNumber": "347-458-7405",
+  "customerRating": 2,
+  "customerCredit": 340,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit65",
+  "firstName": "Harvey",
+  "lastName": "Harrell",
+  "phoneNumber": "872-670-4576",
+  "customerRating": 1,
+  "customerCredit": 488,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit293",
+  "firstName": "Earl",
+  "lastName": "Summers",
+  "phoneNumber": "480-607-7405",
+  "customerRating": 3,
+  "customerCredit": 527,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit127",
+  "firstName": "Eugene",
+  "lastName": "Wiggins",
+  "phoneNumber": "457-244-7405",
+  "customerRating": 5,
+  "customerCredit": 378,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit150",
+  "firstName": "Ralph",
+  "lastName": "Stephenson",
+  "phoneNumber": "568-607-5684",
+  "customerRating": 4,
+  "customerCredit": 438,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit255",
+  "firstName": "Ed",
+  "lastName": "Porter",
+  "phoneNumber": "567-607-3333",
+  "customerRating": 4,
+  "customerCredit": 409,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit46",
+  "firstName": "Claude",
+  "lastName": "Connolly",
+  "phoneNumber": "756-787-7405",
+  "customerRating": 5,
+  "customerCredit": 215,
+  "customerPassword": "000"
+}
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit303",
+  "firstName": "Edwin",
+  "lastName": "Brooks",
+  "phoneNumber": "235-788-7405",
+  "customerRating": 1,
+  "customerCredit": 383,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit131",
+  "firstName": "Ben",
+  "lastName": "Mcphee",
+  "phoneNumber": "112-775-7405",
+  "customerRating": 4,
+  "customerCredit": 269,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit108",
+  "firstName": "Charley",
+  "lastName": "Peralta",
+  "phoneNumber": "146-767-7405",
+  "customerRating": 5,
+  "customerCredit": 509,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit301",
+  "firstName": "Paul",
+  "lastName": "Curry",
+  "phoneNumber": "872-524-7405",
+  "customerRating": 4,
+  "customerCredit": 122,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit61",
+  "firstName": "Edgar",
+  "lastName": "Hutchings",
+  "phoneNumber": "453-607-5685",
+  "customerRating": 4,
+  "customerCredit": 565,
+  "customerPassword": "000"
+}
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit169",
+  "firstName": "Isaac",
+  "lastName": "Myers",
+  "phoneNumber": "457-757-7405",
+  "customerRating": 2,
+  "customerCredit": 246,
+  "customerPassword": "000"
+}
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit66",
+  "firstName": "Otto",
+  "lastName": "Davison",
+  "phoneNumber": "872-575-4455",
+  "customerRating": 3,
+  "customerCredit": 212,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit177",
+  "firstName": "Luther",
+  "lastName": "Bailey",
+  "phoneNumber": "547-877-7405",
+  "customerRating": 5,
+  "customerCredit": 455,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit88",
+  "firstName": "Lawrence",
+  "lastName": "Hanna",
+  "phoneNumber": "233-568-7405",
+  "customerRating": 3,
+  "customerCredit": 216,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit253",
+  "firstName": "Ira",
+  "lastName": "Wilkerson",
+  "phoneNumber": "365-487-8099",
+  "customerRating": 2,
+  "customerCredit": 264,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit111",
+  "firstName": "Patrick",
+  "lastName": "Graham",
+  "phoneNumber": "347-655-4564",
+  "customerRating": 1,
+  "customerCredit": 574,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit96",
+  "firstName": "Guy",
+  "lastName": "Madden",
+  "phoneNumber": "858-346-7405",
+  "customerRating": 1,
+  "customerCredit": 484,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit155",
+  "firstName": "Oliver",
+  "lastName": "Massey",
+  "phoneNumber": "872-467-1111",
+  "customerRating": 3,
+  "customerCredit": 179,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit252",
+  "firstName": "Theodore",
+  "lastName": "Smith",
+  "phoneNumber": "864-924-7405",
+  "customerRating": 5,
+  "customerCredit": 110,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit274",
+  "firstName": "Hugh",
+  "lastName": "Redman",
+  "phoneNumber": "453-763-7405",
+  "customerRating": 2,
+  "customerCredit": 584,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit95",
+  "firstName": "Clyde",
+  "lastName": "Mac",
+  "phoneNumber": "872-586-7405",
+  "customerRating": 4,
+  "customerCredit": 373,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit209",
+  "firstName": "Raymond",
+  "lastName": "Mill",
+  "phoneNumber": "347-607-3748",
+  "customerRating": 1,
+  "customerCredit": 237,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit82",
+  "firstName": "Rufus",
+  "lastName": "Houston",
+  "phoneNumber": "363-457-5653",
+  "customerRating": 2,
+  "customerCredit": 213,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit139",
+  "firstName": "Warren",
+  "lastName": "Wiley",
+  "phoneNumber": "257-363-7405",
+  "customerRating": 4,
+  "customerCredit": 136,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit301",
+  "firstName": "Jessie",
+  "lastName": "Paterson",
+  "phoneNumber": "872-456-3788",
+  "customerRating": 2,
+  "customerCredit": 300,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit285",
+  "firstName": "Milton",
+  "lastName": "Moyer",
+  "phoneNumber": "457-569-7405",
+  "customerRating": 5,
+  "customerCredit": 451,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit248",
+  "firstName": "Alex",
+  "lastName": "Ponce",
+  "phoneNumber": "463-607-7405",
+  "customerRating": 5,
+  "customerCredit": 158,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit240",
+  "firstName": "Leo",
+  "lastName": "Wilson",
+  "phoneNumber": "476-346-5688",
+  "customerRating": 4,
+  "customerCredit": 277,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit12",
+  "firstName": "Julius",
+  "lastName": "Craig",
+  "phoneNumber": "4574-463-4575",
+  "customerRating": 1,
+  "customerCredit": 534,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit188",
+  "firstName": "Ray",
+  "lastName": "Stone",
+  "phoneNumber": "346-585-7405",
+  "customerRating": 1,
+  "customerCredit": 83,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit37",
+  "firstName": "Sidney",
+  "lastName": "Rubio",
+  "phoneNumber": "346-607-5685",
+  "customerRating": 2,
+  "customerCredit": 384,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit296",
+  "firstName": "Bernard",
+  "lastName": "Hoffman",
+  "phoneNumber": "124-457-7405",
+  "customerRating": 1,
+  "customerCredit": 292,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit259",
+  "firstName": "Dan",
+  "lastName": "Barker",
+  "phoneNumber": "235-637-7635",
+  "customerRating": 5,
+  "customerCredit": 26,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit167",
+  "firstName": "Jerry",
+  "lastName": "Boyd",
+  "phoneNumber": "462-546-3505",
+  "customerRating": 4,
+  "customerCredit": 277,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit127",
+  "firstName": "Calvin",
+  "lastName": "Begum",
+  "phoneNumber": "666-645-7405",
+  "customerRating": 4,
+  "customerCredit": 499,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit219",
+  "firstName": "Perry",
+  "lastName": "Calderon",
+  "phoneNumber": "463-607-3455",
+  "customerRating": 2,
+  "customerCredit": 374,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit238",
+  "firstName": "Dave",
+  "lastName": "Ritter",
+  "phoneNumber": "235-207-7405",
+  "customerRating": 1,
+  "customerCredit": 410,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit18",
+  "firstName": "Anthony",
+  "lastName": "Good",
+  "phoneNumber": "342-607-7405",
+  "customerRating": 5,
+  "customerCredit": 342,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit208",
+  "firstName": "Eddie",
+  "lastName": "Hilton",
+  "phoneNumber": "872-634-7405",
+  "customerRating": 1,
+  "customerCredit": 353,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit194",
+  "firstName": "Amos",
+  "lastName": "Chandler",
+  "phoneNumber": "842-624-3455",
+  "customerRating": 1,
+  "customerCredit": 483,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit290",
+  "firstName": "Dennis",
+  "lastName": "Parsons",
+  "phoneNumber": "239-490-4605",
+  "customerRating": 4,
+  "customerCredit": 339,
+  "customerPassword": "000"
+}
+
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit230",
+  "firstName": "Clifford",
+  "lastName": "Chandler",
+  "phoneNumber": "872-607-4403",
+  "customerRating": 3,
+  "customerCredit": 464,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit237",
+  "firstName": "Leroy",
+  "lastName": "Owens",
+  "phoneNumber": "345-676-7405",
+  "customerRating": 4,
+  "customerCredit": 575,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit198",
+  "firstName": "Wesley",
+  "lastName": "Galvan",
+  "phoneNumber": "346-607-7405",
+  "customerRating": 4,
+  "customerCredit": 275,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit255",
+  "firstName": "Alonzo",
+  "lastName": "Gross",
+  "phoneNumber": "872-345-7405",
+  "customerRating": 3,
+  "customerCredit": 351,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit254",
+  "firstName": "Garfield",
+  "lastName": "Morton",
+  "phoneNumber": "367-687-7405",
+  "customerRating": 3,
+  "customerCredit": 413,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit243",
+  "firstName": "Franklin",
+  "lastName": "Forster",
+  "phoneNumber": "582-507-7456",
+  "customerRating": 4,
+  "customerCredit": 558,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit85",
+  "firstName": "Emil",
+  "lastName": "Gilbert",
+  "phoneNumber": "845-325-7405",
+  "customerRating": 3,
+  "customerCredit": 118,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit153",
+  "firstName": "Leon",
+  "lastName": "Robles",
+  "phoneNumber": "378-606-7405",
+  "customerRating": 3,
+  "customerCredit": 246,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit13",
+  "firstName": "Nathan",
+  "lastName": "Gonzalez",
+  "phoneNumber": "872-603-6773",
+  "customerRating": 1,
+  "customerCredit": 341,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit26",
+  "firstName": "Harold",
+  "lastName": "Mcintyre",
+  "phoneNumber": "372-588-7467",
+  "customerRating": 1,
+  "customerCredit": 54,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit182",
+  "firstName": "Matthew",
+  "lastName": "Key",
+  "phoneNumber": "972-307-685",
+  "customerRating": 2,
+  "customerCredit": 420,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit205",
+  "firstName": "Levi",
+  "lastName": "Emery",
+  "phoneNumber": "283-634-4635",
+  "customerRating": 3,
+  "customerCredit": 379,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit140",
+  "firstName": "Moses",
+  "lastName": "Gallegos",
+  "phoneNumber": "456-606-7805",
+  "customerRating": 4,
+  "customerCredit": 167,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit127",
+  "firstName": "Everett",
+  "lastName": "Richardson",
+  "phoneNumber": "832-367-4635",
+  "customerRating": 5,
+  "customerCredit": 542,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit287",
+  "firstName": "Lester",
+  "lastName": "Ellwood",
+  "phoneNumber": "642-607-7405",
+  "customerRating": 4,
+  "customerCredit": 514,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit132",
+  "firstName": "Winfield",
+  "lastName": "Lara",
+  "phoneNumber": "378-852-7405",
+  "customerRating": 4,
+  "customerCredit": 214,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID": "fruit41",
+  "firstName": "Adam",
+  "lastName": "Garner",
+  "phoneNumber": "472-607-5675",
+  "customerRating": 3,
+  "customerCredit": 500,
+  "customerPassword": "000"
+}
+
+###
+POST http://localhost:9090/add_customer
+Content-Type: application/json
+
+{
+  "customerID":  "aapple2",
+  "firstName":  "Alana",
+  "lastName": "Asparagus",
+  "phoneNumber": "333-333-3333",
+  "customerRating": 5,
+  "customerCredit": 600,
+  "customerPassword": "000"
+}

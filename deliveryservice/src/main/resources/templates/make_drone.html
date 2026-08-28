@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Make Drone</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(
+            function () {
+                //SUBMIT FORM
+                $("#droneForm").submit(function(event) {
+                    event.preventDefault();
+                    ajaxPost();
+                    setTimeout(ajaxGet, 600);
+                });
+
+                function ajaxPost() {
+                    var formData = {
+                        storeName: $("#storeName").val(),
+                        droneID: $("#droneID").val(),
+                        weightCap: $("#weightCap").val(),
+                        remainingDelivery: $("#remainingDelivery").val()
+                    };
+
+                    $.ajax({
+                        type : "POST",
+                        contentType : "application/json",
+                        url : "add_drone",
+                        data : JSON.stringify(formData),
+                        dataType : "json"
+                    });
+                }
+
+                function ajaxGet() {
+                    $.ajax({
+                        type : "GET",
+                        url : "/error_msg",
+                        success : function(result) {
+                            $('#error').html(result);
+                            console.log("MESSAGE SHOWS");
+                        }
+                    });
+                }
+            }
+        )
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <a ckass="navbar-brand" href ="/admin_platform" >Main Menu</a>
+    <a href="/logout"><input class="btn btn-outline-success mr-auto" type="button" name="logout" id="logout" value="Logout"></a>
+</nav>
+<div sec:authorize="isAuthenticated()">
+    Authenticated as <span sec:authentication="name"></span>
+</div>
+<div id="main_container" align="center">
+    <div class="stores-wrapper">
+        <div class="subtitle">
+            Make Drone
+        </div>
+        <br>
+        <div id="make_drone">
+            <form id="droneForm" action="#" method="post">
+                <div class="form-group">
+                    <label for="storeName">Store Name:</label>
+                    <input type="text" class="form-control" id="storeName" name="storeName" required/>
+                </div>
+                <div class="form-group">
+                    <label for="droneID">Drone ID:</label>
+                    <input type="text" class="form-control" id="droneID" name="droneID" required/>
+                </div>
+                <div class="form-group">
+                    <label for="weightCap">Weight Capacity:</label>
+                    <input type="number" class="form-control" id="weightCap" name="weightCap" placeholder="integer" required/>
+                </div>
+                <div class="form-group">
+                    <label for="remainingDelivery">Fuel:</label>
+                    <input type="number" class="form-control" id="remainingDelivery" name="remainingDelivery" placeholder="integer" required/>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br />
+            <div class="buttons button-1 ">
+                <a href="/display_drones" class="btn btn-primary mr-auto"> Display Drones </a>
+            </div>
+            <div id="error" align="center"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
