@@ -1,56 +1,211 @@
-# cs6300-group-9
+# 🚁 Drone Delivery System
 
-## Prerequisites
-1. JDK 17
-2. Maven
-3. Postgresql
+A full-stack drone delivery management application built with **Java and Spring Boot** that simulates the operations of a drone-based delivery platform.
 
+The system manages stores, customers, drones, pilots, inventory, and delivery orders through a centralized web application. It was developed as a team software engineering project with an emphasis on **object-oriented design, system architecture, persistence, and multi-user application development**.
 
-## Web page guide:
-  - server.port = 9090
-  - Please navigate to http://localhost:9090
-### Admin login
-  - Username: admin
-  - password: admin
-### Customer login
-  - Register first
+## Overview
 
+The Drone Delivery System models the workflow of a commercial drone delivery platform.
 
-## Two ways to run
-### Run with Docker 
+Users can manage:
 
-1. Clean Docker containers & images.
+- 🏪 Stores and inventory
+- 👤 Customers
+- 🚁 Delivery drones
+- 🧑‍✈️ Drone pilots
+- 📦 Customer orders
+- 🛒 Order items
+- ✈️ Drone delivery operations
 
-2. Change the database url in deliveryservice/src/main/resources/application.properties to:  
-`spring.datasource.url=jdbc:postgresql://db:5432/deliverydb`
+The application coordinates these components while maintaining the relationships between stores, customers, pilots, drones, inventory, and active orders.
 
-3. Run `mvn clean` via command line.  
-If command not found, try to install Maven using `brew install maven` (for Mac) or `choco install maven` (for Windows).  
+## Tech Stack
 
-4. Run `mvn clean install -DskipTests=true` via command line.  
-If there is a folder called "Target" with .jar, then it is build successfully.
+**Backend**
+- Java
+- Spring Boot
+- Spring MVC
+- Spring Data JPA
+- Maven
 
-5. Run `docker-compose up` via command line.  
-If it shows "Failed to bind tcp 0.0.0.0:5432 address already in use", try:  
-- `sudo lsof -i tcp:5432`
-- `sudo kill <pid number>`
-or change the db ports to "5432" instead of "5432:5432" in docker-compose.yml
+**Frontend**
+- HTML
+- CSS
+- Server-side web templates
 
-6. Delete the containers and images after you finish running.  
+**Data & Infrastructure**
+- JPA persistence layer
+- Repository pattern
+- Docker
+- Docker Compose
 
-### Local test without Docker:  
-  
-1. Change the databse url in deliveryservice/src/main/resources/application.properties to:  
-`spring.datasource.url=jdbc:postgresql://localhost:5432/deliverydb`
-  
-2. Install Postgres app or install via command line:  
-- For Mac: run `brew install postgres`  
-- For Windows: run `choco install postgres`  
+**Testing**
+- JUnit
+- Spring Boot Test
 
-3. If there are some packages/dependencies showing red letters with dependencies already exist:  
-Clicking File -> Invalidate Caches and restarting the IDE
+## Architecture
 
+The application follows a layered architecture:
 
+```text
+Browser / User
+      │
+      ▼
+┌─────────────────────┐
+│   Web Interface     │
+│   HTML / CSS        │
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│ Controllers         │
+│ Spring MVC          │
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│ Service Layer       │
+│ Business Logic      │
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│ Repository Layer    │
+│ Spring Data JPA     │
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│ Domain / Data Model │
+│ Customer, Drone,    │
+│ Store, Order, etc.  │
+└─────────────────────┘
+```
 
-  
-  
+This separation keeps presentation logic, business rules, and data access organized and maintainable.
+
+## Core Features
+
+### Store Management
+Create and manage stores and their available inventory.
+
+### Customer Management
+Maintain customer information and support customer-specific ordering workflows.
+
+### Drone Management
+Register drones and manage their operational assignments.
+
+### Pilot Management
+Maintain drone pilot information and associate pilots with drone operations.
+
+### Order Management
+Create, view, update, cancel, and process customer orders.
+
+### Delivery Operations
+Coordinate stores, orders, pilots, and drones to simulate the delivery workflow.
+
+## Project Structure
+
+```text
+drone-delivery-system/
+│
+├── deliveryservice/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── edu/gatech/deliveryservice/
+│   │   │   │       ├── configuration/
+│   │   │   │       ├── controller/
+│   │   │   │       ├── jpa/
+│   │   │   │       ├── repository/
+│   │   │   │       ├── service/
+│   │   │   │       ├── threadexecutor/
+│   │   │   │       └── viewcontroller/
+│   │   │   │
+│   │   │   └── resources/
+│   │   │       ├── css/
+│   │   │       ├── templates/
+│   │   │       └── application.properties
+│   │   │
+│   │   └── test/
+│   │
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   └── pom.xml
+│
+└── README.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Java
+- Maven or Maven Wrapper
+- Docker *(optional)*
+
+### Run with Maven
+
+Navigate to the application directory:
+
+```bash
+cd deliveryservice
+```
+
+On macOS/Linux:
+
+```bash
+./mvnw spring-boot:run
+```
+
+On Windows:
+
+```bash
+mvnw.cmd spring-boot:run
+```
+
+Then open the application in your browser using the local address configured by the Spring Boot application.
+
+### Run with Docker
+
+The project also includes Docker configuration:
+
+```bash
+cd deliveryservice
+docker compose up --build
+```
+
+## Testing
+
+Run the automated tests with:
+
+```bash
+cd deliveryservice
+./mvnw test
+```
+
+On Windows:
+
+```bash
+mvnw.cmd test
+```
+
+## Software Engineering Concepts Demonstrated
+
+This project demonstrates practical experience with:
+
+- Object-oriented programming
+- Layered software architecture
+- MVC design
+- Web controller development
+- Repository pattern
+- Database persistence with JPA
+- Dependency injection
+- Multi-user application workflows
+- Automated testing
+- Maven dependency management
+- Docker containerization
+- Team-based software development
